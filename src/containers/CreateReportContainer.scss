@@ -1,0 +1,118 @@
+.FormRow{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.inputRow {
+    font-size: 15px;
+    line-height: 23.1px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+
+.select{
+    width: 100%;
+
+
+}
+.nothing{
+    background-color: yellow;
+    width: 10px;
+    height: 20px;
+}
+.flexH{    
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+
+
+
+.flex{
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+#Checkbox{
+    margin-top: 10px;
+    margin-bottom: 5;
+}
+.flexbox {
+}
+
+
+
+.inline{
+    width: 100%;
+}
+.fontRoboto{
+    font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif
+}
+
+.right {
+    margin: 10px 0;
+}
+
+.input_wrapper {
+    height: 30px;
+}
+.input_wrapper .select_wrapper {
+    background-color: #fff;
+    border: 1px solid rgba(89,104,126,.5);
+    color: #222;
+    transition: all .12s ease;
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.2);
+    padding-right: 5px;
+}
+.input_wrapper .select_wrapper select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 2px 24px 2px 12px;
+    line-height: 21px;
+    max-width: 200px;
+}
+.select_wrapper{
+    width: 100%;
+}
+.select{
+    min-width: 81px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

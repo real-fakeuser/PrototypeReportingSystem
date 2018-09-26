@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { fromJS } from 'immutable';
 import { PersonFinder } from 'chayns-components';
 import { addUser as addUserAction } from '../actions/userList';
+import { Input } from 'chayns-components';
+
 
 const PersonFinderWrapper = ({ addUser }) => (
     <PersonFinder
