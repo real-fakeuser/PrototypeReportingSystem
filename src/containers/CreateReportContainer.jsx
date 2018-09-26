@@ -15,7 +15,6 @@ import { ContextMenu } from 'chayns-components';
 import 'chayns-components/lib/react-chayns-contextmenu/index.css';
 import { ScrollView } from 'chayns-components';
 import { Checkbox } from 'chayns-components';
-
 import 'chayns-components/lib/react-chayns-scrollview/index.css';
 
 
@@ -115,7 +114,18 @@ const ReportFormWrapper = ({ addReport }) => (
                             console.log(`You have selected ${files.length} files of which ${validFiles.length} are valid`);
                         }}
                     />
-
+                </div>
+                <div className='flexH'>
+                    <div className='flexbox'>
+                        <Button
+                            disabled={false}
+                            onClick={function (event) {
+                                console.log(event);
+                            }}
+                        >
+                            Fehler melden
+                    </Button>
+                    </div>
                 </div>
 
 
@@ -125,53 +135,11 @@ const ReportFormWrapper = ({ addReport }) => (
 
         </div>
 
-        <FileUpload
-            multiple={false}
-            type="image"
-            onChange={(files, validFiles) => {
-                console.log(`You have selected ${files.length} files of which ${validFiles.length} are valid`);
-            }}
-        />
-
-        <div>
-            <div className='flexbox'>
-                <div className='inline'>
-                    <a>Standort: </a>
-                </div>
-                <div className='input_wrapper inline'>
-                    <div className='select_wrapper'>
-                        <select><option>Tag</option><option>Woche</option><option>Monat</option><option>Quartal</option></select>
-                    </div>
-                </div>
-            </div>
-            <div className='flexbox'>
-                <div className='inline'>
-                    <a>Fachbereich: </a>
-                </div>
-                <div className='input_wrapper inline'>
-                    <div className='select_wrapper'>
-                        <select><option>Tag</option><option>Woche</option><option>Monat</option><option>Quartal</option></select>
-                    </div>
-                </div>
-            </div>
-            <div className='flexbox'>
-                <div className='inline'>
-                    <a>Hohe Priorität: </a>
-                </div>
-                <div className='inline'>
-                    <Checkbox
-                        label="This is a toggle button"
-                        toggleButton={true}
-                        onChange={(value) => { console.log(value); }}
-                    />
-                </div>
-            </div>
         </div>
 
 
 
 
-    </div>
 );
 
 ReportFormWrapper.propTypes = {

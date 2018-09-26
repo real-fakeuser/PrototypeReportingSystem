@@ -1,13 +1,7 @@
-.select_wrapper2 {
-    width: 400px;
-    height: 200px;
-    background-color: red;
-
-}
 .FormRow{
     width: 100%;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .inputRow {
@@ -19,13 +13,23 @@
 }
 
 
-
 .select{
     width: 100%;
 
 
 }
-
+.nothing{
+    background-color: yellow;
+    width: 10px;
+    height: 20px;
+}
+.flexH{    
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
 
 
 
@@ -39,6 +43,7 @@
 
 #Checkbox{
     margin-top: 10px;
+    margin-bottom: 5;
 }
 .flexbox {
 }
