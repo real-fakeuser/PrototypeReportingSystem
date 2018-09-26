@@ -93,7 +93,7 @@ const ReportFormWrapper = ({ addReport }) => (
                     }}
                 />
                 <Input
-                    style={FormRow}
+                    style={{ width: '100%' }}
                     placeholder="Worum geht es?"
                     onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
                     onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
