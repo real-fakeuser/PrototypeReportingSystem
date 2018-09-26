@@ -129,7 +129,7 @@ const ReportFormWrapper = ({ addReport }) => (
                 <div className='FormRow inputRow flexbox'>
                     <Input
                         style={{ width: '100%' }}
-                        placeholder="Worum geht es?"
+                        placeholder="Anmerkungen oder sonstige Infos"
                         onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
                         onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
                         onChange={(result) => {
