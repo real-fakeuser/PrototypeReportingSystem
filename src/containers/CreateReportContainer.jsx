@@ -30,21 +30,22 @@ const ReportFormWrapper = ({ addReport }) => (
             <div>
                 <h2>Erstelle Hier Deinen Fehler-Report</h2>
             </div>
-            <div className='inputRow flex'>
-                <Input
-                    style={{ width: '100%' }}
-                    placeholder="Worum geht es?"
-                    onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
-                    onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
-                    onChange={(result) => {
-
-                        console.log(result);
-
-                    }}
-                />
-            </div>
             <div className='flex'>
-                <div className='input_wrapper inline'>
+
+                <div className='FormRow inputRow flexbox'>
+                    <Input
+                        style={{ width: '100%' }}
+                        placeholder="Worum geht es?"
+                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
+                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
+                        onChange={(result) => {
+
+                            console.log(result);
+
+                        }}
+                    />
+                </div>
+                <div className='input_wrapper FormRow flexbox'>
                     <div className='select_wrapper'>
                         <select className='select'>
                             <option value="volvo">Bamboo Ahaus</option>
@@ -56,9 +57,7 @@ const ReportFormWrapper = ({ addReport }) => (
                     </div>
                 </div>
 
-            </div>
-            <div className='flex'>
-                <div className='input_wrapper inline'>
+                <div className='input_wrapper FormRow flexbox'>
                     <div className='select_wrapper'>
                         <select className='select'>
                             <option value="volvo">Facility Management</option>
@@ -70,9 +69,7 @@ const ReportFormWrapper = ({ addReport }) => (
                     </div>
                 </div>
 
-            </div>
-            <div className='flex'>
-                <div className='input_wrapper'>
+                <div className='input_wrapper FormRow flexbox' id='Checkbox'>
                     <Checkbox
                         onChange={(value) => { console.log(value); }}
                         disabled={false}
@@ -80,34 +77,36 @@ const ReportFormWrapper = ({ addReport }) => (
                         Schwerwiegende Störung
                     </Checkbox>
                 </div>
+                <div className='FormRow inputRow flexbox'>
+                    <Input
+                        style={{ width: '100%' }}
+                        placeholder="Wie erreichen wir Dich am schnellsten?"
+                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
+                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
+                        onChange={(result) => {
 
-                <Input
-                    style={{ width: '100%' }}
-                    placeholder="Wie erreichen wir Dich am schnellsten?"
-                    onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
-                    onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
-                    onChange={(result) => {
+                            console.log(result);
 
-                        console.log(result);
+                        }}
+                    />
+                </div>
+                <div className='FormRow inputRow flexbox'>
+                    <Input
+                        style={{ width: '100%' }}
+                        placeholder="Worum geht es?"
+                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
+                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
+                        onChange={(result) => {
 
-                    }}
-                />
-                <Input
-                    style={{ width: '100%' }}
-                    placeholder="Worum geht es?"
-                    onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
-                    onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
-                    onChange={(result) => {
+                            console.log(result);
 
-                        console.log(result);
-
-                    }}
-                />
-
-                <div className='right FormRow'>
+                        }}
+                    />
+                </div>
+                <div className='FormRow flexbox'>
                     <a href="#">Hast Du schon unter Lösungen für häufige Fragen geschaut?</a>
                 </div>
-                <div className='FormRow'>
+                <div className='FormRow flexbox'>
                     <FileUpload
                         style={{ width: '100%' }}
                         multiple={false}
