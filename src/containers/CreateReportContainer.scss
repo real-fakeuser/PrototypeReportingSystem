@@ -23,6 +23,7 @@
     width: 10px;
     height: 20px;
 }
+
 .flexH{    
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -30,10 +31,13 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-
-
-
+.flexR{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
 
 .flex{
     -ms-flex-direction: column;
