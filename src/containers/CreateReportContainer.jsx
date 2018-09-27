@@ -16,6 +16,7 @@ import 'chayns-components/lib/react-chayns-contextmenu/index.css';
 import { ScrollView } from 'chayns-components';
 import { Checkbox } from 'chayns-components';
 import 'chayns-components/lib/react-chayns-scrollview/index.css';
+import { SelectButton } from 'chayns-components';
 
 
 const ReportFormWrapper = ({ addReport }) => (
@@ -44,29 +45,65 @@ const ReportFormWrapper = ({ addReport }) => (
                         }}
                     />
                 </div>
-                <div className='input_wrapper FormRow flexbox'>
-                    <div className='select_wrapper'>
-                        <select className='select'>
-                            <option value="volvo">Bamboo Ahaus</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
 
-                        </select>
+                <div className='flexR FormRow'>
+                    <div className="flex__left">Location</div>
+                    <div>
+                    <SelectButton
+                    label="Wählen"
+                    list={[{
+                        id: '0', //this is the listKey
+                        name: 'Bamboo Ahaus', //this ist the listValue (shown value inside the dialog)
+                        price: '4.00' //additional data that will be returned after selection
+                    }, {
+                        id: '1',
+                        name: 'Next Ahaus',
+                        price: '4.50'
+                    }, {
+                        id: '2',
+                        name: 'Tobit.Software',
+                        price: '4.50'
+                    }, {
+                        id: '3',
+                        name: 'Tobit.Labs',
+                        price: '5.00'
+                    }]}
+                    onSelect={(value) => { console.log(value) }}
+                    listKey="id"
+                    listValue="name"
+                />
+                    </div>
+                </div>
+                <div className='flexR FormRow'>
+                    <div className="flex__left">Abteilung</div>
+                    <div>
+                    <SelectButton
+                    label="Wählen"
+                    list={[{
+                        id: '0', //this is the listKey
+                        name: 'Facility Management', //this ist the listValue (shown value inside the dialog)
+                        price: '4.00' //additional data that will be returned after selection
+                    }, {
+                        id: '1',
+                        name: 'Administration',
+                        price: '4.50'
+                    }, {
+                        id: '2',
+                        name: 'Personalmanagement',
+                        price: '4.50'
+                    }, {
+                        id: '3',
+                        name: 'Küche',
+                        price: '5.00'
+                    }]}
+                    onSelect={(value) => { console.log(value) }}
+                    listKey="id"
+                    listValue="name"
+                />
                     </div>
                 </div>
 
-                <div className='input_wrapper FormRow flexbox'>
-                    <div className='select_wrapper'>
-                        <select className='select'>
-                            <option value="volvo">Facility Management</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
 
-                        </select>
-                    </div>
-                </div>
 
                 <div className='input_wrapper FormRow flexbox' id='Checkbox'>
                     <Checkbox
@@ -92,7 +129,7 @@ const ReportFormWrapper = ({ addReport }) => (
                 <div className='FormRow inputRow flexbox'>
                     <Input
                         style={{ width: '100%' }}
-                        placeholder="Worum geht es?"
+                        placeholder="Anmerkungen oder sonstige Infos"
                         onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
                         onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
                         onChange={(result) => {
@@ -116,7 +153,8 @@ const ReportFormWrapper = ({ addReport }) => (
                     />
                 </div>
                 <div className='flexH'>
-                    <div className='flexbox'>
+                <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
+                    <div className='flexbox' style={{'whiteSpace':'nowrap'}}>
                         <Button
                             disabled={false}
                             onClick={function (event) {
@@ -126,6 +164,7 @@ const ReportFormWrapper = ({ addReport }) => (
                             Fehler melden
                     </Button>
                     </div>
+                    <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
                 </div>
 
 
@@ -135,7 +174,7 @@ const ReportFormWrapper = ({ addReport }) => (
 
         </div>
 
-        </div>
+    </div>
 
 
 
