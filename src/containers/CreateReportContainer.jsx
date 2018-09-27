@@ -31,6 +31,45 @@ const ReportFormWrapper = ({ addReport }) => (
                 <h2>Report erstellen</h2>
             </div>
             <div className='flex'>
+            <div className='FormRow inputRow flexbox'>
+                    <Input
+                        style={{ width: '100%' }}
+                        placeholder="Worum geht es?"
+                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
+                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
+                        onChange={(result) => {
+
+                            console.log(result);
+
+                        }}
+                    />
+                </div>
+
+                <div className='FormRow inputRow flexbox'>
+                    <Input
+                        style={{ width: '100%' }}
+                        placeholder="Wie erreichen wir Dich am schnellsten?"
+                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
+                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
+                        onChange={(result) => {
+
+                            console.log(result);
+
+                        }}
+                    />
+                </div>
+
+                <div className='FormRow flexbox'>
+                    <FileUpload
+                        style={{ width: '100%' }}
+                        multiple={false}
+                        type="image"
+                        upload
+                        onUpload={(files, validFiles) => {
+                            console.log(files);
+                        }}
+                    />
+                </div>
 
 
                 <div className='flexR FormRow'>
@@ -103,58 +142,6 @@ const ReportFormWrapper = ({ addReport }) => (
                     </Checkbox>
                 </div>
 
-                                <div className='FormRow inputRow flexbox'>
-                    <Input
-                        style={{ width: '100%' }}
-                        placeholder="Worum geht es?"
-                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
-                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
-                        onChange={(result) => {
-
-                            console.log(result);
-
-                        }}
-                    />
-                </div>
-
-                <div className='FormRow inputRow flexbox'>
-                    <Input
-                        style={{ width: '100%' }}
-                        placeholder="Wie erreichen wir Dich am schnellsten?"
-                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
-                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
-                        onChange={(result) => {
-
-                            console.log(result);
-
-                        }}
-                    />
-                </div>
-                <div className='FormRow inputRow flexbox'>
-                    <Input
-                        style={{ width: '100%' }}
-                        placeholder="Anmerkungen oder sonstige Infos"
-                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
-                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
-                        onChange={(result) => {
-
-                            console.log(result);
-
-                        }}
-                    />
-                </div>
-
-                <div className='FormRow flexbox'>
-                    <FileUpload
-                        style={{ width: '100%' }}
-                        multiple={false}
-                        type="image"
-                        upload
-                        onUpload={(files, validFiles) => {
-                            console.log(files);
-                        }}
-                    />
-                </div>
                 <div className='flexH' style={{'marginBottom':'8px'}}>
                 <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
                     <div className='flexbox' style={{'whiteSpace':'nowrap'}}>
