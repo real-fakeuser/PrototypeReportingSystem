@@ -50,7 +50,7 @@ const ReportFormWrapper = ({ addReport }) => (
                     <div className="flex__left">Location</div>
                     <div>
                     <SelectButton
-                    label="Wähle Deine Location"
+                    label="Wählen"
                     list={[{
                         id: '0', //this is the listKey
                         name: 'Bamboo Ahaus', //this ist the listValue (shown value inside the dialog)
@@ -78,7 +78,7 @@ const ReportFormWrapper = ({ addReport }) => (
                     <div className="flex__left">Abteilung</div>
                     <div>
                     <SelectButton
-                    label="Wähle eine Abteilung"
+                    label="Wählen"
                     list={[{
                         id: '0', //this is the listKey
                         name: 'Facility Management', //this ist the listValue (shown value inside the dialog)
@@ -129,7 +129,7 @@ const ReportFormWrapper = ({ addReport }) => (
                 <div className='FormRow inputRow flexbox'>
                     <Input
                         style={{ width: '100%' }}
-                        placeholder="Worum geht es?"
+                        placeholder="Anmerkungen oder sonstige Infos"
                         onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
                         onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
                         onChange={(result) => {
@@ -153,7 +153,8 @@ const ReportFormWrapper = ({ addReport }) => (
                     />
                 </div>
                 <div className='flexH'>
-                    <div className='flexbox'>
+                <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
+                    <div className='flexbox' style={{'whiteSpace':'nowrap'}}>
                         <Button
                             disabled={false}
                             onClick={function (event) {
@@ -163,6 +164,7 @@ const ReportFormWrapper = ({ addReport }) => (
                             Fehler melden
                     </Button>
                     </div>
+                    <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
                 </div>
 
 
