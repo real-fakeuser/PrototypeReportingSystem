@@ -29,7 +29,7 @@ const ReportListWrapper = ({ showList }) => (
 
         <div className="descr fontRoboto">
             <div>
-                <Accordion head="Deine Reports" defaultOpened={true}>
+                <Accordion head={<div className='AccordionHead'>Deine Reports</div>} defaultOpened={true}>
                     <div className="accordion__content">
 
 
@@ -160,21 +160,42 @@ const ReportListWrapper = ({ showList }) => (
                                     </div>
                                     <div className='flexH'>
                                         <div className='descriptionDetails'>
-                                        <h2></h2>
+                                        <h3>Meldungszeit</h3>
+                                        Gestern, 15:32Uhr
                                         
                                         </div>
                                         <div className='descriptionDetails'>
-                                        
-                                        
+                                        <h3>Angegebene Location</h3>
+                                        Bamboo Ahaus
                                         </div>
 
                                     </div>
-                                </div>
+                                    <div className=''>
+                                    <h3>Anmerkungen und Sonstiges</h3>
+                                    Dieser Text kann vom User eingegeben werden und er enthält Zusatzinformationen über die Location, den Vorfall, Tätigkeiten etc.
+                                    </div>
+                                    </div>
+
+                                
+                                    <div>
+                                    <Accordion head={<div className='AccordionHead'>Kontakt</div>}
+                                                
+                                                defaultOpened={true} isWrapped>
+                                        <div className="accordion__content">
+                                            <div>
+                                                <a>Hans Mustername</a><br/>
+                                                <a>Tobit.Software</a><br/>
+                                                <a>+49 4568 465 789</a><br/>
+                                                <a>+49 6633 453 915</a><br/>
+                                                <a>Hans.Mustername@gmx.de</a><br/>
 
 
+                                            </div>
 
 
-
+                                        </div>
+                                    </Accordion>
+                                    </div>
 
 
                             </div>
@@ -187,10 +208,7 @@ const ReportListWrapper = ({ showList }) => (
 
 
 
-
-
-                </Accordion>
-
+</Accordion>
 
             </div>
         </div >
