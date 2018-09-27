@@ -149,8 +149,9 @@ const ReportFormWrapper = ({ addReport }) => (
                         style={{ width: '100%' }}
                         multiple={false}
                         type="image"
-                        onChange={(files, validFiles) => {
-                            console.log(`You have selected ${files.length} files of which ${validFiles.length} are valid`);
+                        upload
+                        onUpload={(files, validFiles) => {
+                            console.log(files);
                         }}
                     />
                 </div>

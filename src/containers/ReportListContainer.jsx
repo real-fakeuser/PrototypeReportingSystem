@@ -30,17 +30,7 @@ const ReportListWrapper = ({ showList }) => (
         <div className="descr fontRoboto">
             <div>
                 <Accordion head={<div className='AccordionHead'>Deine Reports</div>} defaultOpened={true}>
-                    <div className="accordion__content">
-
-
-
-
-
-
-
-
-
-
+                    <div>
                         <div className="accordion accordion--wrapped showProjectList" data-group="4">
                             <div className="accordion__head">
                                 <div className="accordion--trigger">
