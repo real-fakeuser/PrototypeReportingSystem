@@ -28,25 +28,14 @@ const ReportFormWrapper = ({ addReport }) => (
         <link type="text/css" rel="stylesheet" href="//https://design.chayns.net/1669229"></link>
         <div className="content__card descr fontRoboto">
             <div>
-                <h2>Erstelle Hier Deinen Fehler-Report</h2>
+                <h2>Report erstellen</h2>
             </div>
             <div className='flex'>
 
-                <div className='FormRow inputRow flexbox'>
-                    <Input
-                        style={{ width: '100%' }}
-                        placeholder="Worum geht es?"
-                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
-                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
-                        onChange={(result) => {
-
-                            console.log(result);
-
-                        }}
-                    />
-                </div>
 
                 <div className='flexR FormRow'>
+
+                
                     <div className="flex__left">Location</div>
                     <div>
                     <SelectButton
@@ -105,7 +94,7 @@ const ReportFormWrapper = ({ addReport }) => (
 
 
 
-                <div className='input_wrapper FormRow flexbox' id='Checkbox'>
+                <div className='input_wrapper FormRow flexbox' id='Checkbox' style={{'marginBottom':'-2px'}}>
                     <Checkbox
                         onChange={(value) => { console.log(value); }}
                         disabled={false}
@@ -113,6 +102,21 @@ const ReportFormWrapper = ({ addReport }) => (
                         Schwerwiegende Störung
                     </Checkbox>
                 </div>
+
+                                <div className='FormRow inputRow flexbox'>
+                    <Input
+                        style={{ width: '100%' }}
+                        placeholder="Worum geht es?"
+                        onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
+                        onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
+                        onChange={(result) => {
+
+                            console.log(result);
+
+                        }}
+                    />
+                </div>
+
                 <div className='FormRow inputRow flexbox'>
                     <Input
                         style={{ width: '100%' }}
@@ -139,9 +143,7 @@ const ReportFormWrapper = ({ addReport }) => (
                         }}
                     />
                 </div>
-                <div className='FormRow flexbox'>
-                    <a href="#">Hast Du schon unter Lösungen für häufige Fragen geschaut?</a>
-                </div>
+
                 <div className='FormRow flexbox'>
                     <FileUpload
                         style={{ width: '100%' }}
