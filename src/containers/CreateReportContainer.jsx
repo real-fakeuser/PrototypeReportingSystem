@@ -142,7 +142,7 @@ const ReportFormWrapper = ({ addReport }) => (
                     </Checkbox>
                 </div>
 
-                <div className='flexH' style={{'marginBottom':'8px'}}>
+                <div className='flexH' style={{'marginBottom':'8px', 'marginTop':'10px'}}>
                 <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
                     <div className='flexbox' style={{'whiteSpace':'nowrap'}}>
                         <Button
