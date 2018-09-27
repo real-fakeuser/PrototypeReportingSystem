@@ -152,7 +152,7 @@ const ReportFormWrapper = ({ addReport }) => (
                         }}
                     />
                 </div>
-                <div className='flexH'>
+                <div className='flexH' style={{'marginBottom':'8px'}}>
                 <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
                     <div className='flexbox' style={{'whiteSpace':'nowrap'}}>
                         <Button
