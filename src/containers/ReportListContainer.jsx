@@ -42,7 +42,7 @@ const ReportListWrapper = ({ showList }) => (
                                     </div>
                                 </div>
                                 <div className="right" style={{ 'display': 'flex', 'flexDirection': 'row' }}>
-                                    <div className="badge accordion--trigger" style={{ 'backgroundColor': 'greenyellow', 'color': 'black' }}>In Bearbeitung</div>
+                                    <div className="badge accordion--trigger" style={{ 'backgroundColor': 'red', 'color': 'white' }}>Ausstehend</div>
                                 </div>
                             </div>
                             <div className="accordion__body">
@@ -62,8 +62,8 @@ const ReportListWrapper = ({ showList }) => (
                             <div className="accordion__head">
                                 <div className="accordion--trigger">
                                     <div className="headerText">
-                                        <div className="headline">Defekter Monitor</div>
-                                        <div className="description">Max Mustermann</div>
+                                        <div className="headline">Ausfall Kaffeemaschine</div>
+                                        <div className="description">Hans Mustername</div>
                                     </div>
                                 </div>
                                 <div className="right" style={{ 'display': 'flex', 'flexDirection': 'row' }}>
@@ -77,25 +77,125 @@ const ReportListWrapper = ({ showList }) => (
                                         </div>
                                     </div>
 
+
+                                    <div style={{ 'marginTop': '10px' }}>
+                                        <div className="accordion accordion--wrapped accordion--open showProject" data-group="2" style={{ 'paddingLeft': '20px' }}>
+                                            <div className="accordion__head">
+                                                <div className='test123'>
+                                                    Beteiligte
+                                            </div>
+                                            </div>
+                                            <div className="accordion__body">
+                                                <div className="accordion__content" style={{ 'marginLeft': '-10px' }}>
+                                                    <div className="receiver-input-box">
+                                                        <div className="receiver-input chayns__border-color--40 receiver-input--dark">
+                                                            <div className="receiver-input chayns__border-color--40 receiver-input--dark">
+                                                                <div className="flexH">
+                                                                    <div className="chosen-member">
+                                                                        <div className="chosen-member__content chayns__background-color--25 chosen-member__content--dark">
+                                                                            <span className="chosen-member__content__name">
+                                                                                Mitarbeiter Nr. 1
+                                                            </span>
+
+                                                                            <button className="close">X</button>                                                                        </div>
+                                                                    </div>
+                                                                    <div className="chosen-member">
+                                                                        <div className="chosen-member__content chayns__background-color--25 chosen-member__content--dark">
+                                                                            <span className="chosen-member__content__name">
+                                                                                Mitarbeiter Nr. 2
+                                                            </span>
+                                                                            <button className="close">X</button>                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="input-box">
+                                                                <input type="text" className="input receiver-input-field" value="" placeholder="">
+                                                                </input>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{ 'marginTop': '10px' }}>
+                                        <div className="accordion accordion--wrapped accordion--open showProject" data-group="2" style={{ 'paddingLeft': '20px' }}>
+                                            <div className="accordion__head">
+                                                <div className='test123'>
+                                                    Fachbereich
+                                            </div>
+                                            </div>
+                                            <div className="accordion__body">
+                                                <div className="accordion__content" style={{ 'marginLeft': '-10px' }}>
+                                                    <div className="receiver-input-box">
+                                                        <div className="receiver-input chayns__border-color--40 receiver-input--dark">
+                                                            <div className="receiver-input chayns__border-color--40 receiver-input--dark">
+                                                                <div className="flexH">
+                                                                    <div className="chosen-member">
+                                                                        <div className="chosen-member__content chayns__background-color--25 chosen-member__content--dark">
+                                                                            <span className="chosen-member__content__name">
+                                                                                Facility Management
+                                                            </span>
+
+                                                                            <button className="close">X</button>                                                                        </div>
+                                                                    </div>
+                                                                    <div className="chosen-member">
+                                                                        <div className="chosen-member__content chayns__background-color--25 chosen-member__content--dark">
+                                                                            <span className="chosen-member__content__name">
+                                                                                Firma Müller
+                                                            </span>
+                                                                            <button className="close">X</button>                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="input-box">
+                                                                <input type="text" className="input receiver-input-field" value="" placeholder="">
+                                                                </input>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flexH'>
+                                        <div className='descriptionDetails'>
+                                        <h2></h2>
+                                        
+                                        </div>
+                                        <div className='descriptionDetails'>
+                                        
+                                        
+                                        </div>
+
+                                    </div>
                                 </div>
+
+
+
+
+
+
+
                             </div>
                         </div>
-
-
-
-
-
-
-
-
                     </div>
+
+
+
+
+
+
+
+
+
                 </Accordion>
 
 
             </div>
-        </div>
+        </div >
 
-    </div>
+    </div >
 
 
 
