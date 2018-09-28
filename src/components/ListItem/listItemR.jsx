@@ -90,31 +90,7 @@ export default class ListItem extends React.Component {
                             <div className='flexR FormRow'>
                                 <div className="flex__left">Abteilung</div>
                                 <div>
-
-                                    <SelectButton
-                                        label="Administration"
-                                        list={[{
-                                            id: '0', //this is the listKey
-                                            name: 'Facility Management', //this ist the listValue (shown value inside the dialog)
-                                            price: '4.00' //additional data that will be returned after selection
-                                        }, {
-                                            id: '1',
-                                            name: 'Administration',
-                                            price: '4.50'
-                                        }, {
-                                            id: '2',
-                                            name: 'Personalmanagement',
-                                            price: '4.50'
-                                        }, {
-                                            id: '3',
-                                            name: 'Küche',
-                                            price: '5.00'
-                                        }]}
-                                        onSelect={(value) => { console.log(value) }}
-                                        listKey="id"
-                                        listValue="name"
-                                    />
-                                </div>
+Administration                                </div>
                             </div>
                             <div className='title '>
                                 <div className='titleimage2'>
@@ -128,7 +104,7 @@ export default class ListItem extends React.Component {
 
 
                             <Accordion head='Verlauf'
-                                style={{ 'marginBottom': '5px', 'borderBottom': 'none' }}
+                                style={{ 'marginBottom': '5px', 'borderBottom': 'none'}}
                                 defaultOpened={false}>
                                 <div className="accordion__content" style={{ 'marginLeft': '0', 'paddingLeft': '9px', 'paddingTop': '10px', 'paddingBottom': '9px' }}>
                                     <div>
@@ -152,6 +128,11 @@ export default class ListItem extends React.Component {
                                             description="Erstellte Report"
                                             badgeText="Vor 82 Min"
                                         />
+
+
+
+
+
                                     </div>
                                 </div>
                             </Accordion>

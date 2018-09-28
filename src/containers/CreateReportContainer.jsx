@@ -76,10 +76,10 @@ const ReportFormWrapper = ({ addReport }) => (
                 <div className='flexR FormRow'>
 
                 
-                    <div className="flex__left">Location</div>
+                    <div className="flex__left">Wo bist Du gerade?</div>
                     <div>
                     <SelectButton
-                    label="Wählen"
+                    label="Tobit.Campus"
                     list={[{
                         id: '0', //this is the listKey
                         name: 'Bamboo Ahaus', //this ist the listValue (shown value inside the dialog)
@@ -94,7 +94,7 @@ const ReportFormWrapper = ({ addReport }) => (
                         price: '4.50'
                     }, {
                         id: '3',
-                        name: 'Tobit.Labs',
+                        name: 'Tobit.Campus',
                         price: '5.00'
                     }]}
                     onSelect={(value) => { console.log(value) }}

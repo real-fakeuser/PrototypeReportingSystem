@@ -19,6 +19,8 @@ import 'chayns-components/lib/react-chayns-scrollview/index.css';
 import { Accordion } from 'chayns-components';
 import { SelectButton } from 'chayns-components';
 import ListItem from '../components/ListItem/listItem';
+import ListItemR from '../components/ListItem/listItemR';
+import ListItemA from '../components/ListItem/listItemA';
 
 
 
@@ -90,25 +92,25 @@ const ReportListWrapper = ({ showList }) => (
                 badgeStyle={{'position': 'absolute', 'right': '5px', 'top': '2.5px' }}
                 style={{ 'width': '100%' }}
             >
-                <ListItem
+                <ListItemA
                     titleString="Monitor ausgefallen"
-                    description="Tobit.Software Ausstehend"
+                    description="Tobit.Software In Bearbeitung durch Dir"
                     badgeText="Vor 3 Minuten"
                     isOpen
                 />
-                <ListItem
+                <ListItemA
                     titleString="Telefonie funktioniert nicht"
-                    description="TKWY Ahaus Abgeschlossen"
+                    description="TKWY Ahaus In Bearbeitung durch Dir"
                     badgeText="Gestern"
                 />
-                <ListItem
+                <ListItemR
                     titleString="Kaffeemaschine Ausfall"
-                    description="Tobit.Labs Ausstehend"
+                    description="Tobit.Labs Abgeschlossen durch Dich"
                     badgeText="Gestern"
                 />
-                <ListItem
+                <ListItemR
                     titleString="WLAN Ausgefallen"
-                    description="Cinemy Ahaus Ausstehend"
+                    description="Cinemy Ahaus Abgeschlossen durch Dich"
                     badgeText="21.05.2018"
                 />
                 <div className='accordion__content'>
@@ -127,9 +129,9 @@ const ReportListWrapper = ({ showList }) => (
                     badgeText="36 Min."
                     isOpen
                 />
-                <ListItem
+                <ListItemR
                     titleString="Telefonie funktioniert nicht"
-                    description="TKWY Ahaus Abgeschlossen"
+                    description="TKWY Ahaus In Bearbeitung durch Bernd Alter"
                     badgeText="Gestern"
                 />
                 <ListItem
