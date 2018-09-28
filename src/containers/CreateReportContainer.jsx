@@ -17,6 +17,8 @@ import { ScrollView } from 'chayns-components';
 import { Checkbox } from 'chayns-components';
 import 'chayns-components/lib/react-chayns-scrollview/index.css';
 import { SelectButton } from 'chayns-components';
+import { Accordion } from 'chayns-components';
+
 
 
 const ReportFormWrapper = ({ addReport }) => (
@@ -26,10 +28,9 @@ const ReportFormWrapper = ({ addReport }) => (
         <link type="text/css" rel="stylesheet" charSet="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></link>
         <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <link type="text/css" rel="stylesheet" href="//https://design.chayns.net/1669229"></link>
-        <div className="content__card descr fontRoboto">
-            <div>
-                <h2>Report erstellen</h2>
-            </div>
+        <div className="descr fontRoboto">
+        <Accordion head='Report erstellen'>
+            <div className='accordion__content'>
             <div className='flex'>
             <div className='FormRow inputRow flexbox'>
                     <Input
@@ -48,7 +49,7 @@ const ReportFormWrapper = ({ addReport }) => (
                 <div className='FormRow inputRow flexbox'>
                     <Input
                         style={{ width: '100%' }}
-                        placeholder="Wie erreichen wir Dich am schnellsten?"
+                        placeholder="Beschreibung (optional)"
                         onInput={(text) => { console.log('There is some new input. Check the new text: ', text); }}
                         onBlur={(text) => { console.log('The input losted its focus, the final input is: ', text); }}
                         onChange={(result) => {
@@ -151,14 +152,16 @@ const ReportFormWrapper = ({ addReport }) => (
                                 console.log(event);
                             }}
                         >
-                            Fehler melden
+                            Report abschicken
                     </Button>
                     </div>
                     <div style={{ width: '100%', 'whiteSpace':'nowrap'}}></div>
                 </div>
 
 
-            </div>
+            </div>            </div>
+        </Accordion>
+
 
 
 

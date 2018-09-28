@@ -18,6 +18,7 @@ import { Checkbox } from 'chayns-components';
 import 'chayns-components/lib/react-chayns-scrollview/index.css';
 import { Accordion } from 'chayns-components';
 import { SelectButton } from 'chayns-components';
+import ListItem from '../components/ListItem/listItem';
 
 
 
@@ -29,6 +30,47 @@ const ReportListWrapper = ({ showList }) => (
         <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <link type="text/css" rel="stylesheet" href="//https://design.chayns.net/1669229"></link>
         <div className="descr fontRoboto">
+
+
+            <Accordion head='Reports mit hoher Prorität'
+                badge='1'
+                badgeStyle={{ 'backgroundColor': 'red', 'color': 'white', 'position': 'relative', 'top': '-10px' }}
+            >
+                <ListItem
+                    titleString="Description"
+                    description="Description!"
+                    isOpen
+                />
+                <div className='accordion__content'>
+                </div>
+
+                <div className="accordion__item">
+
+
+                </div>
+                <Accordion
+                    head={
+                        <div className="accordion__item">
+                            Accordion head
+                    </div>
+                    }
+                >
+
+
+                </Accordion>
+            </Accordion>
+
+
+
+
+
+
+
+
+
+
+
+
             <div>
 
 
@@ -48,7 +90,7 @@ const ReportListWrapper = ({ showList }) => (
 
                             <div className="accordion accordion--wrapped showProjectList" data-group="4">
                                 <div className="accordion__head">
-                         
+
                                     <div className="accordion--trigger">
                                         <div className="headerText">
                                             <div className="headline">Ausfall Kaffeemaschine</div>
@@ -56,7 +98,7 @@ const ReportListWrapper = ({ showList }) => (
                                         </div>
                                     </div>
                                     <div className="right" style={{ 'display': 'flex', 'flexDirection': 'row' }}>
-                                        <div className="badge accordion--trigger" style={{'color': 'black' }}>16 Min.</div>
+                                        <div className="badge accordion--trigger" style={{ 'color': 'black' }}>16 Min.</div>
                                     </div>
                                 </div>
 
@@ -117,10 +159,10 @@ const ReportListWrapper = ({ showList }) => (
                                             <div className='flexR FormRow'>
 
                                                 <div className="flex__left">Abteilung</div>
-                                                <div className='' style={{'marginRight': '20px', 'text-align': 'right', 'width': '100%'}}>Facility Management</div>
+                                                <div className='' style={{ 'marginRight': '20px', 'text-align': 'right', 'width': '100%' }}>Facility Management</div>
 
                                                 <div>
-                                                    
+
                                                     <SelectButton
                                                         label="Ändern"
                                                         list={[{
@@ -148,9 +190,9 @@ const ReportListWrapper = ({ showList }) => (
                                             </div>
                                             <div>
                                                 <Accordion head={<div className='AccordionHead accordion--trigger'>Kontakt</div>}
-                                                    style={{'marginBottom': '0px'}}
+                                                    style={{ 'marginBottom': '0px' }}
                                                     defaultOpened={false}>
-                                                    <div className="accordion__content" style={{'marginLeft': '0', 'paddingLeft': '9px', 'paddingTop': '10px', 'paddingBottom': '9px'}}>
+                                                    <div className="accordion__content" style={{ 'marginLeft': '0', 'paddingLeft': '9px', 'paddingTop': '10px', 'paddingBottom': '9px' }}>
                                                         <div>
                                                             Hans Mustername<br />
                                                             Tobit.Software<br />
@@ -159,19 +201,19 @@ const ReportListWrapper = ({ showList }) => (
                                                             'Alternative Erreichbarkeit'<br />
                                                             <form>
                                                                 <div className="input-group">
-                                                                    <textarea name="InterCom 0" id="message0" className="input" type="text" placeholder="Nachricht" style={{'height': '33px', 'overflow': 'hidden', 'width': '100%', 'margin': '15px 0'}} rows="1">
+                                                                    <textarea name="InterCom 0" id="message0" className="input" type="text" placeholder="Nachricht" style={{ 'height': '33px', 'overflow': 'hidden', 'width': '100%', 'margin': '15px 0' }} rows="1">
                                                                     </textarea>
                                                                     <div className="click-polyfill hiddenTM">
                                                                     </div>
                                                                 </div>
                                                                 <div className="buttonWrapper intercom flexR">
-                                                                <div style={{'width': '40%'}}></div>
+                                                                    <div style={{ 'width': '40%' }}></div>
                                                                     <div className="button button--disabled icBtn">
                                                                         <span>
                                                                             Absenden
                                                         </span>
                                                                     </div>
-                                                                    <div style={{'width': '40%'}}></div>
+                                                                    <div style={{ 'width': '40%' }}></div>
                                                                 </div>
                                                             </form>
 
@@ -232,7 +274,7 @@ const ReportListWrapper = ({ showList }) => (
 
                             <div className="accordion accordion--wrapped showProjectList" data-group="4">
                                 <div className="accordion__head">
-                         
+
                                     <div className="accordion--trigger">
                                         <div className="headerText">
                                             <div className="headline">Monitor defekt</div>
@@ -329,9 +371,9 @@ const ReportListWrapper = ({ showList }) => (
                                             </div>
                                             <div>
                                                 <Accordion head={<div className='AccordionHead accordion--trigger'>Kontakt</div>}
-                                                    style={{'marginBottom': '0px'}}
+                                                    style={{ 'marginBottom': '0px' }}
                                                     defaultOpened={false}>
-                                                    <div className="accordion__content" style={{'marginLeft': '0', 'paddingLeft': '9px', 'paddingTop': '10px', 'paddingBottom': '9px'}}>
+                                                    <div className="accordion__content" style={{ 'marginLeft': '0', 'paddingLeft': '9px', 'paddingTop': '10px', 'paddingBottom': '9px' }}>
                                                         <div>
                                                             Hans Mustername<br />
                                                             Tobit.Software<br />
@@ -340,19 +382,19 @@ const ReportListWrapper = ({ showList }) => (
                                                             'Alternative Erreichbarkeit'<br />
                                                             <form>
                                                                 <div className="input-group">
-                                                                    <textarea name="InterCom 0" id="message0" className="input" type="text" placeholder="Nachricht" style={{'height': '33px', 'overflow': 'hidden', 'width': '100%', 'margin': '15px 0'}} rows="1">
+                                                                    <textarea name="InterCom 0" id="message0" className="input" type="text" placeholder="Nachricht" style={{ 'height': '33px', 'overflow': 'hidden', 'width': '100%', 'margin': '15px 0' }} rows="1">
                                                                     </textarea>
                                                                     <div className="click-polyfill hiddenTM">
                                                                     </div>
                                                                 </div>
                                                                 <div className="buttonWrapper intercom flexR">
-                                                                <div style={{'width': '40%'}}></div>
+                                                                    <div style={{ 'width': '40%' }}></div>
                                                                     <div className="button button--disabled icBtn">
                                                                         <span>
                                                                             Absenden
                                                         </span>
                                                                     </div>
-                                                                    <div style={{'width': '40%'}}></div>
+                                                                    <div style={{ 'width': '40%' }}></div>
                                                                 </div>
                                                             </form>
 
@@ -372,8 +414,8 @@ const ReportListWrapper = ({ showList }) => (
 
 
                                     </div>
-                                    </div>
-                                    </div>
+                                </div>
+                            </div>
 
 
 
@@ -412,7 +454,7 @@ const ReportListWrapper = ({ showList }) => (
                     </div>
                     <div className="accordion__body">
                         <div className="accordion__content" style={{ 'marginLeft': '0' }}>
-                                <p>Hier stehen später deine angenommenen Reports bzw. die die Dir zugewiesen sind.</p>
+                            <p>Hier stehen später deine angenommenen Reports bzw. die die Dir zugewiesen sind.</p>
                         </div>
                     </div>
                 </div>
@@ -430,7 +472,7 @@ const ReportListWrapper = ({ showList }) => (
                     </div>
                     <div className="accordion__body">
                         <div className="accordion__content" style={{ 'marginLeft': '0' }}>
-                        <p>Hier stehen später die von Dir erstellten Reports.</p>
+                            <p>Hier stehen später die von Dir erstellten Reports.</p>
                         </div>
                     </div>
                 </div>
