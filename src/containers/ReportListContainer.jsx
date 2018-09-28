@@ -117,7 +117,10 @@ const ReportListWrapper = ({ showList }) => (
                                             <div className='flexR FormRow'>
 
                                                 <div className="flex__left">Abteilung</div>
+                                                <div className='' style={{'marginRight': '20px', 'text-align': 'right', 'width': '100%'}}>Facility Management</div>
+
                                                 <div>
+                                                    
                                                     <SelectButton
                                                         label="Ändern"
                                                         list={[{
