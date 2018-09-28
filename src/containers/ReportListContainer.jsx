@@ -34,11 +34,13 @@ const ReportListWrapper = ({ showList }) => (
 
             <Accordion head='Reports mit hoher Prorität'
                 badge='1'
-                badgeStyle={{ 'backgroundColor': 'red', 'color': 'white', 'position': 'relative', 'top': '-10px' }}
+                badgeStyle={{ 'backgroundColor': 'red', 'color': 'white', 'position': 'absolute', 'right': '5px', 'top': '2.5px' }}
+                style={{ 'width': '100%' }}
             >
                 <ListItem
-                    titleString="Description"
-                    description="Description!"
+                    titleString="Ausfall Kaffeemaschine"
+                    description="Tobit.Software Ausstehend"
+                    badgeText="82 Min."
                     isOpen
                 />
                 <div className='accordion__content'>
@@ -48,16 +50,6 @@ const ReportListWrapper = ({ showList }) => (
 
 
                 </div>
-                <Accordion
-                    head={
-                        <div className="accordion__item">
-                            Accordion head
-                    </div>
-                    }
-                >
-
-
-                </Accordion>
             </Accordion>
 
 
