@@ -56,7 +56,7 @@ const ReportListWrapper = ({ showList }) => (
                                         </div>
                                     </div>
                                     <div className="right" style={{ 'display': 'flex', 'flexDirection': 'row' }}>
-                                        <div className="badge accordion--trigger" style={{ 'backgroundColor': '#F1C141', 'color': 'black' }}>16 Min.</div>
+                                        <div className="badge accordion--trigger" style={{'color': 'black' }}>16 Min.</div>
                                     </div>
                                 </div>
 
